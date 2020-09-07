@@ -1,6 +1,6 @@
-# Nepali Calendar JS Library
+# Nepali Calendar JS Library :nepal:
 
-## Descrition :nepal:
+## Descrition
 
 This is the simple library for developers who wants a Nepali Calendar in there app with JS. The objective of this library is to provide a complete solution for the nepali calendar needs. Either that being need for calendar for UI design or may be its for datepicker. This library will also be usefull and provide an option to convert the dates back and forth in nepali and international calendar.
 
