@@ -1,3 +1,3 @@
-const msg = "Hello world";
+const NepaliCalendar = function(options) {
 
-console.log(msg);
+}

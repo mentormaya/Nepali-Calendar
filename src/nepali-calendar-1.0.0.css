@@ -1,0 +1,228 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nepali-calendar {
+  min-width: 450px;
+  min-height: 300px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fcf9f9;
+  -webkit-box-shadow: 11px 11px 17px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 11px 17px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.nepali-calendar h1,
+.nepali-calendar h2,
+.nepali-calendar h3,
+.nepali-calendar h4,
+.nepali-calendar h5,
+.nepali-calendar h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+.nepali-calendar p,
+.nepali-calendar span,
+.nepali-calendar ul,
+.nepali-calendar li {
+  color: #333333;
+  font-weight: 100;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 1rem;
+}
+
+.nepali-calendar .calendar-contain {
+  position: relative;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1020px;
+  min-width: 450px;
+  margin: 1rem auto;
+  -webkit-box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
+          box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
+  color: #000;
+}
+
+@media screen and (min-width: 55em) {
+  .nepali-calendar .calendar-contain {
+    margin: auto;
+    top: 5%;
+  }
+}
+
+.nepali-calendar .calendar-contain .calendar__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  float: none;
+  font-size: 12px;
+  padding: 0.5rem;
+  background: #fcf9f9;
+}
+
+@media screen and (min-width: 55em) {
+  .nepali-calendar .calendar-contain .calendar__days {
+    width: 100%;
+    float: right;
+  }
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__title-bar {
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.2rem 0.8rem;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 32px;
+      -ms-flex: 32px 0 0px;
+          flex: 32px 0 0;
+  border-top: 2px solid #7f7f81;
+  border-bottom: 2px solid #7f7f81;
+  background-color: #eeebeb;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__top-bar .top-bar__days {
+  width: 100%;
+  padding: 0 5px;
+  color: #333333;
+  font-weight: 100;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0.2rem;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__date {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 0.7;
+  padding: 0.3rem;
+}
+
+@media screen and (min-width: 55em) {
+  .nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__date {
+    font-size: 2.2rem;
+  }
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__intdate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 55em) {
+  .nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__intdate {
+    font-size: 1rem;
+  }
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__intdate.calendar__intdate--today {
+  color: #595b5c;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 55em) {
+  .nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__task {
+    font-size: 1rem;
+  }
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__task.calendar__task--today {
+  color: #595b5c;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day .calendar__task__completed {
+  text-decoration: line-through;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .calendar__day:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.75);
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .inactive .calendar__date,
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .inactive .task-count {
+  color: #acabab;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .today {
+  border-radius: 5px;
+  border: 2px solid #7f7f81;
+}
+
+.nepali-calendar .calendar-contain .calendar__days .calendar__week .today .calendar__date {
+  color: #595b5c;
+}
+/*# sourceMappingURL=nepali-calendar-1.0.0.css.map */

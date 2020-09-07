@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Calendar Demo</title>
+    <link rel="stylesheet" href="nepali-calendar-1.0.0.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nepali-calendar"></div>
+    </div>
+
+    <script src="nepali-calendar-1.0.0.js"></script>
+    <script>
+        const nepCal = new NepaliCalendar();
+
+        const options = {
+            width: '600px',
+            height: '550px',
+            lang: 'nep'
+        };
+
+
+        nepCal.initialize(options);
+    </script>
+</body>
+
+</html>
