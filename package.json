@@ -1,0 +1,24 @@
+{
+  "name": "nepali-calendar",
+  "version": "1.0.0",
+  "description": "This is the nepali calendar library for nepali developers or whoever wants to use it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mentormaya/Nepali-Calendar.git"
+  },
+  "keywords": [
+    "Nepali",
+    "calendar",
+    "dropdown"
+  ],
+  "author": "Ajay Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mentormaya/Nepali-Calendar/issues"
+  },
+  "homepage": "https://github.com/mentormaya/Nepali-Calendar#readme"
+}
