@@ -1,3 +1,0 @@
-const NepaliCalendar = function(options) {
-
-}

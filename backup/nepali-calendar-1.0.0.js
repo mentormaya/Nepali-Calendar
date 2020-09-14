@@ -115,16 +115,6 @@ const digits_word_nepali = [
     "सय",
 ];
 
-const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-const days_nepali = [
-    "आइतवार",
-    "साेमवार",
-    "मंगलवार",
-    "बुधवार",
-    "विहीवार",
-    "शुक्रवार",
-    "शनिवार",
-];
 
 let lastDate = 31;
 let lastDatePreviousMonth = 30;
